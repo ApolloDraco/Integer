@@ -1,11 +1,12 @@
 /* 
- *  Description: A program that reads an integer between 0 and 1000 and multiplies all the digits in the integer 
-*/
+ * Description: A program that reads an integer between 0 and 1000 and adds all the digits in the integer 
+ */
 
 import java.util.Scanner;
-public class Integer {
 
-    public static void main(String[] Strings) {
+public class IntegerDigits {
+
+    public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
 
@@ -14,12 +15,12 @@ public class Integer {
 
         int firstDigit = num % 10;
         int remainingNumber = num / 10;
-        int SecondDigit = remainingNumber % 10;
+        int secondDigit = remainingNumber % 10;
         remainingNumber = remainingNumber / 10;
         int thirdDigit = remainingNumber % 10;
         remainingNumber = remainingNumber / 10;
         int fourthDigit = remainingNumber % 10;
-        int sum = thirdDigit + SecondDigit + firstDigit + fourthDigit;
+        int sum = thirdDigit + secondDigit + firstDigit + fourthDigit;
         System.out.println("The sum of all digits in " + num + " is " + sum);
 
     }
